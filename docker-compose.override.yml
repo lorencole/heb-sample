@@ -1,0 +1,13 @@
+version: '3' 
+services:  
+  java-api:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    environment:
+      - GCP_KEY=<your key>
+    ports:
+      - 8080:8080
+    container_name: java-api
+    links:
+      - mongo-db

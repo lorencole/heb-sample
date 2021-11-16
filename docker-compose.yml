@@ -1,0 +1,9 @@
+version: '3'
+services:
+  mongo-db:
+    image: mongo:5.0.3
+    ports:
+      - 27017:27017
+    container_name: "mongo-db"
+
+  

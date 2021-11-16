@@ -1,0 +1,18 @@
+server:
+    port: 8080
+
+spring: 
+    main:
+        banner-mode: "off" 
+    data:
+        mongodb:
+            host: mongo-db   
+            database: hebapp  
+            username: admin      
+            password: password
+
+logging: 
+    level: 
+        org: 
+            springframework: ERROR
+
