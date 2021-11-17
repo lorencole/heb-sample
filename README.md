@@ -24,6 +24,8 @@ It contains the following endpoints:
 • Posts a JSON request object which must include an base64 encoded image (no Data URI Scheme)  or URL. The request may also include an optional label for the image, and an optional field to enable object detection.
 • Returns a HTTP 200 OK with a JSON response body including image details for the created image. 
 
+Note: metadata is only available for images posted with base64 encoding.
+
 
 #### Image details response object
 <pre>
